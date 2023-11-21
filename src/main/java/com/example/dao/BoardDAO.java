@@ -106,6 +106,7 @@ public class BoardDAO {
             while(rs.next()) {
                 BoardVO one = new BoardVO();
                 one.setSeq(rs.getInt("seq"));
+                one.setCategory(rs.getString("category"));
                 one.setTitle(rs.getString("title"));
                 one.setWriter(rs.getString("writer"));
                 one.setContent(rs.getString("content"));
